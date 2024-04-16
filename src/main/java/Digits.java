@@ -17,8 +17,8 @@ public class Digits
 	}
 
 	public boolean isStrictlyIncreasing()
-	{ 
-		int a = digitList.get(0)
+	{  
+		int a = digitList.get(0);
 		for(int i = 0; i < digitList.size(); i++){
 			if(digitList.get(a) > digitList.get(i)){
 				return false;
