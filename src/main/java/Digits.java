@@ -6,14 +6,25 @@ public class Digits
 	private ArrayList<Integer> digitList;
 
 	public Digits(int num)
-	{ /* to be implemented in part (a) */ 
-	    
+	{ 
+		if(num == 0){
+			digitList.add(0);
+		}else {
+			int ee = num % 10;
+			digitList.add(0, ee);
+			ee = ee / 10;
+		}
 	}
 
 	public boolean isStrictlyIncreasing()
-	{ /* to be implemented in part (b) */
-		
-
+	{ 
+		int a = digitList.get(0)
+		for(int i = 0; i < digitList.size(); i++){
+			if(digitList.get(a) > digitList.get(i)){
+				return false;
+			}
+		}
+		return false;
 	}
 	
 	public String toString()
